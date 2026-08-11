@@ -257,7 +257,7 @@ button {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 0.88fr 1.12fr;
+  grid-template-columns: 0.8fr 1.2fr;
   gap: clamp(40px, 6vw, 88px);
   align-items: center;
 }
@@ -326,7 +326,7 @@ button {
 .hero-portrait-wrap {
   position: relative;
   justify-self: end;
-  width: min(100%, 620px);
+  width: min(100%, 700px);
 }
 
 .hero-portrait-wrap::before {
@@ -342,8 +342,8 @@ button {
 
 .portrait {
   position: relative;
-  aspect-ratio: 9 / 20;
-  height: min(92vh, 940px);
+  aspect-ratio: 1 / 2;
+  height: min(96vh, 980px);
   width: auto;
   cursor: crosshair;
   user-select: none;
@@ -370,14 +370,14 @@ button {
   background-image: url("../assets/img-reveal-cutout.webp");
   opacity: var(--spot-alpha, 0);
   -webkit-mask-image: radial-gradient(
-    circle 320px at var(--spot-x, 50%) var(--spot-y, 50%),
+    circle 340px at var(--spot-x, 50%) var(--spot-y, 50%),
     #fff 0%,
     #fff 34%,
     rgba(255, 255, 255, 0.38) 62%,
     transparent 100%
   );
   mask-image: radial-gradient(
-    circle 320px at var(--spot-x, 50%) var(--spot-y, 50%),
+    circle 340px at var(--spot-x, 50%) var(--spot-y, 50%),
     #fff 0%,
     #fff 34%,
     rgba(255, 255, 255, 0.38) 62%,
