@@ -343,16 +343,22 @@ button {
   aspect-ratio: 9 / 20;
   height: min(76vh, 720px);
   width: auto;
-  border-radius: 26px;
-  overflow: hidden;
   cursor: crosshair;
-  border: 1px solid var(--line-strong);
-  box-shadow:
-    0 30px 80px -30px rgba(0, 0, 0, 0.85),
-    0 0 0 1px rgba(255, 120, 60, 0.08),
-    0 0 70px -20px rgba(255, 77, 43, 0.25);
   user-select: none;
   -webkit-user-select: none;
+  /* 柔和边缘渐隐：让照片的黑色背景融入页面，人物像是直接站在页面上 */
+  -webkit-mask-image: radial-gradient(
+    170% 116% at 50% 45%,
+    #000 76%,
+    rgba(0, 0, 0, 0.55) 90%,
+    transparent 99%
+  );
+  mask-image: radial-gradient(
+    170% 116% at 50% 45%,
+    #000 76%,
+    rgba(0, 0, 0, 0.55) 90%,
+    transparent 99%
+  );
 }
 
 .portrait-bg,
@@ -402,17 +408,6 @@ button {
 
 .portrait[data-reveal="off"] .portrait-hint {
   display: none;
-}
-
-.portrait-frame {
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  background:
-    linear-gradient(160deg, rgba(255, 255, 255, 0.12), transparent 30%),
-    linear-gradient(20deg, rgba(255, 90, 40, 0.16), transparent 45%);
-  mix-blend-mode: screen;
 }
 
 .portrait-hint {
