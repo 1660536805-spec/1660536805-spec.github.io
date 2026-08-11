@@ -11,6 +11,17 @@ python3 -m http.server 8080
 # 打开 http://localhost:8080
 ```
 
+## 线上发布
+
+- 线上地址：<https://1660536805-spec.github.io/>
+- 托管：GitHub Pages（仓库 `1660536805-spec/1660536805-spec.github.io`）
+- SEO：`robots.txt` + `sitemap.xml` + Open Graph / canonical 已配置；
+  `c4c8d6af-4b47-4e9d-a277-b595b90eaad8.txt` 为 IndexNow 收录密钥。
+- 自定义域名：当前 `leo.yin.com` 不可用（`yin.com` 已被他人注册），
+  可注册 `leo-yin.com` 等可用域名后，在仓库根目录添加
+  `CNAME` 文件（内容为域名）并在域名服务商配置 CNAME 指向
+  `1660536805-spec.github.io`。
+
 ## 文件结构
 
 ```text
