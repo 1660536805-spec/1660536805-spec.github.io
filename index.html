@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YIN · 个人主页</title>
+  <meta name="description" content="YIN 的个人网站——把想法做成体验的全栈开发者与创意工程师。">
+  <link rel="canonical" href="https://1660536805-spec.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="YIN · 个人主页">
+  <meta property="og:description" content="YIN 的个人网站——把想法做成体验的全栈开发者与创意工程师。">
+  <meta property="og:url" content="https://1660536805-spec.github.io/">
+  <meta property="og:image" content="https://1660536805-spec.github.io/assets/img-default.jpg">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="YIN · 个人主页">
+  <meta name="twitter:description" content="把想法做成体验的全栈开发者与创意工程师。">
+  <meta name="twitter:image" content="https://1660536805-spec.github.io/assets/img-default.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "YIN",
+    "url": "https://1660536805-spec.github.io/",
+    "description": "全栈开发者与创意工程师，把想法做成体验。"
+  }
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff4b2b'/%3E%3Cstop offset='1' stop-color='%23ff9a3d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2308080a'/%3E%3Ccircle cx='32' cy='32' r='18' fill='url(%23g)'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img-default.jpg">
+  <link rel="preload" as="image" href="assets/img-reveal.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <!-- ======= 导航 ======= -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">YIN<span class="brand-dot">.</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#skills">技能</a>
+        <a href="#works">作品</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-ghost btn-sm nav-cta" href="#contact">预约合作 →</a>
+        <button class="nav-burger" id="navBurger" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ======= Hero ======= -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal-up">— HELLO, I'M YIN · INTERACTIVE PORTFOLIO</p>
+          <h1 class="hero-title reveal-up">
+            把想法，<br>
+            <span class="grad-text">做成体验。</span>
+          </h1>
+          <p class="hero-sub reveal-up">
+            全栈开发者与创意工程师，习惯把产品、视觉与代码编织成可交互的作品。
+            相信好的设计会说话，好的代码会呼吸。
+          </p>
+          <div class="hero-actions reveal-up">
+            <a class="btn btn-primary" href="#works">查看作品</a>
+            <a class="btn btn-ghost" href="#about">关于我</a>
+          </div>
+          <ul class="hero-tags reveal-up">
+            <li>React / Next.js</li>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>嵌入式</li>
+          </ul>
+        </div>
+
+        <div class="hero-portrait-wrap reveal-up">
+          <div class="portrait" id="portrait" data-reveal="on"
+               role="img" aria-label="YIN 的肖像照，鼠标移动可查看另一面">
+            <div class="portrait-bg" aria-hidden="true"></div>
+            <div class="portrait-reveal" aria-hidden="true"></div>
+            <div class="portrait-frame" aria-hidden="true"></div>
+            <div class="portrait-hint" id="portraitHint">移动鼠标 · 查看另一面</div>
+          </div>
+          <div class="stat-chip stat-1"><b>100%</b><span>热情投入</span></div>
+          <div class="stat-chip stat-2"><b>20+</b><span>项目交付</span></div>
+          <div class="stat-chip stat-3"><b>∞</b><span>好奇心驱动</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 技术栈跑马灯 ======= -->
+    <section class="ticker" aria-label="常用技术栈">
+      <div class="ticker-track" id="tickerTrack">
+        <span>React</span><i>✦</i>
+        <span>Next.js</span><i>✦</i>
+        <span>TypeScript</span><i>✦</i>
+        <span>Node.js</span><i>✦</i>
+        <span>UI / UX</span><i>✦</i>
+        <span>交互原型</span><i>✦</i>
+        <span>嵌入式</span><i>✦</i>
+        <span>AI 应用</span><i>✦</i>
+      </div>
+    </section>
+
+    <!-- ======= 关于 ======= -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">01 — ABOUT</p>
+          <h2 class="section-title">关于<span class="grad-text">我</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              你好，我是 YIN。一名喜欢折腾的全栈开发者，相信技术的终点是「体验」——
+              从一行代码到一个可触摸的界面，把抽象的想法变成真实可感的作品。
+            </p>
+            <p>
+              我关注的不只是功能是否跑通，还有它是否自然、流畅、让人会心一笑。
+              当前在探索 AI 与创意工具的交叉点，也在做一些嵌入式相关的有趣硬件。
+            </p>
+          </div>
+          <ul class="about-points">
+            <li>
+              <b>01</b>
+              <div><h3>产品思维</h3><p>先想清楚「为什么」，再决定「怎么做」。</p></div>
+            </li>
+            <li>
+              <b>02</b>
+              <div><h3>全栈能力</h3><p>从界面、服务到硬件，能独立把整条链路跑通。</p></div>
+            </li>
+            <li>
+              <b>03</b>
+              <div><h3>细节控</h3><p>动画、过渡、边界情况，都是体验的一部分。</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 技能 ======= -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">02 — SKILLS</p>
+          <h2 class="section-title">技能<span class="grad-text">栈</span></h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="skill-icon">⌘</span>
+            <h3>前端开发</h3>
+            <p>React · Next.js · TypeScript，注重性能与可维护性。</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon">⇄</span>
+            <h3>后端服务</h3>
+            <p>Node.js · REST / SSE，设计清晰的 API 与数据流。</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon">◐</span>
+            <h3>视觉与交互</h3>
+            <p>从设计语言到微交互，让界面有呼吸感。</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon">◇</span>
+            <h3>创意原型</h3>
+            <p>Canvas · WebGL · 动效，快速把灵感变成 Demo。</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon">▣</span>
+            <h3>嵌入式硬件</h3>
+            <p>STM32 · 传感器融合，软硬件协同开发。</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon">✦</span>
+            <h3>AI 应用</h3>
+            <p>LLM 集成与提示工程，把大模型接进真实产品。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 作品 ======= -->
+    <section class="section works" id="works">
+      <div class="container">
+        <div class="section-head works-head">
+          <div>
+            <p class="section-label">03 — SELECTED WORKS</p>
+            <h2 class="section-title">代表<span class="grad-text">作品</span></h2>
+          </div>
+          <!-- TODO: 替换成你的 GitHub 主页链接 -->
+          <a class="works-all" href="https://github.com/1660536805-spec" target="_blank" rel="noopener">GitHub 全部作品 →</a>
+        </div>
+        <div class="works-grid">
+          <!-- TODO: 每个作品卡片的 GitHub 链接替换为你的真实仓库地址 -->
+          <a class="work-card" href="https://github.com/1660536805-spec" target="_blank" rel="noopener"
+             aria-label="GitHub：手控隔空控制光标操作平台">
+            <div class="work-cover cover-a">
+              <span>创意 · 人机交互</span>
+              <i class="cover-glyph" aria-hidden="true">☝</i>
+              <img class="work-shot-wide" src="assets/works/gesture-cursor.jpg"
+                   alt="手控隔空控制光标平台网页截图" loading="lazy">
+            </div>
+            <div class="work-body">
+              <h3>手控隔空控制光标平台</h3>
+              <p>摄像头识别手势隔空控制鼠标：移动 / 点击 / 拖拽 / 滚动，识别全程本地完成，画面不上传。</p>
+              <ul class="work-tags">
+                <li>MediaPipe</li><li>本地推理</li><li>Python</li><li>单文件部署</li>
+              </ul>
+              <span class="work-link">GitHub 主页 →</span>
+            </div>
+          </a>
+          <a class="work-card" href="https://github.com/1660536805-spec" target="_blank" rel="noopener"
+             aria-label="GitHub：调解服务受理平台">
+            <div class="work-cover cover-b">
+              <span>全栈 · 企业交付</span>
+              <i class="cover-glyph" aria-hidden="true">▤</i>
+              <img class="work-shot" src="assets/works/mediation-home.png"
+                   alt="调解服务受理平台首页截图" loading="lazy">
+            </div>
+            <div class="work-body">
+              <h3>调解服务受理平台</h3>
+              <p>企业级案件调解受理：用户端 H5 与后台管理一体，案件上传 / 审核 / 支付 / 佣金 / 团队业绩全流程。</p>
+              <ul class="work-tags">
+                <li>Next.js</li><li>TypeScript</li><li>Tailwind</li><li>SQLite</li>
+              </ul>
+              <span class="work-link">GitHub 主页 →</span>
+            </div>
+          </a>
+          <a class="work-card" href="https://github.com/1660536805-spec" target="_blank" rel="noopener"
+             aria-label="GitHub：TeamAI Hub 团队 AI 工作台">
+            <div class="work-cover cover-c">
+              <span>AI · 团队协作</span>
+              <i class="cover-glyph" aria-hidden="true">✦</i>
+              <img class="work-shot-wide" src="assets/works/teamai-hub-v2.jpg"
+                   alt="TeamAI Hub 工作台界面截图" loading="lazy">
+            </div>
+            <div class="work-body">
+              <h3>TeamAI Hub 工作台</h3>
+              <p>多模型路由的团队 AI 协作平台：BYOK 密钥、配额与权限管理、SSE 流式对话、模型市场。</p>
+              <ul class="work-tags">
+                <li>多模型路由</li><li>BYOK</li><li>SSE</li><li>配额权限</li>
+              </ul>
+              <span class="work-link">GitHub 主页 →</span>
+            </div>
+          </a>
+          <a class="work-card" href="https://github.com/1660536805-spec" target="_blank" rel="noopener"
+             aria-label="GitHub：可交互个人网站">
+            <div class="work-cover cover-d">
+              <span>创意 · 前端</span>
+              <i class="cover-glyph" aria-hidden="true">◐</i>
+              <img class="work-shot-wide" src="assets/works/portfolio-site.jpg"
+                   alt="可交互个人网站首页截图" loading="lazy">
+            </div>
+            <div class="work-body">
+              <h3>可交互个人网站</h3>
+              <p>本页：Canvas 动态径向渐变遮罩实现鼠标 spotlight reveal，两张照片无缝切换、移动端优雅降级。</p>
+              <ul class="work-tags">
+                <li>Canvas</li><li>CSS Mask</li><li>动效</li><li>响应式</li>
+              </ul>
+              <span class="work-link">GitHub 主页 →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 联系 ======= -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <p class="section-label">04 — CONTACT</p>
+          <h2 class="contact-title">一起做点<span class="grad-text">有趣的东西</span>？</h2>
+          <p class="contact-sub">无论是产品、网站还是硬件创意，欢迎随时聊聊。</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:hello@yin.dev">发邮件给我 →</a>
+            <a class="btn btn-ghost" href="#" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost" href="#" rel="noopener">微信</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top">YIN<span class="brand-dot">.</span></a>
+      <p>© 2026 YIN · 用代码与好奇心构建。</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
