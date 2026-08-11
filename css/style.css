@@ -361,13 +361,13 @@ button {
 }
 
 .portrait-bg {
-  background-image: url("../assets/img-default-cutout.png");
+  background-image: url("../assets/img-default-cutout.webp");
 }
 
 /* reveal 图层：径向渐变遮罩由 CSS 变量驱动（JS 每帧写入位置与透明度），
    相比逐帧 canvas.toDataURL 更流畅，且移动端无 hover 时保持隐藏 */
 .portrait-reveal {
-  background-image: url("../assets/img-reveal-cutout.png");
+  background-image: url("../assets/img-reveal-cutout.webp");
   opacity: var(--spot-alpha, 0);
   -webkit-mask-image: radial-gradient(
     circle 250px at var(--spot-x, 50%) var(--spot-y, 50%),
