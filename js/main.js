@@ -135,7 +135,9 @@
   if (portrait && revealLayer) {
     // 判断设备是否支持悬停。桌面窗口多窄都保留效果，
     // 避免内嵌浏览器/窄窗口被误判成移动端。
-    var hoverSupported = window.matchMedia("(hover: hover)").matches;
+    // 用 any-hover 判定：只要存在可悬停的输入设备（鼠标/触控板）就启用 hover 效果，
+    // 避免应用内浏览器/混合设备把 hover 误判为不可用
+    var hoverSupported = window.matchMedia("(any-hover: hover)").matches;
     var touchOnly =
       !hoverSupported &&
       (window.matchMedia("(pointer: coarse)").matches || "ontouchstart" in window);
@@ -259,16 +261,15 @@
         }, 2800);
       });
     } else {
-      if (window.PointerEvent) {
-        portrait.addEventListener("pointermove", onPointerMove);
-        portrait.addEventListener("pointerenter", onPointerEnter);
-        portrait.addEventListener("pointerleave", onPointerLeave);
-      } else {
-        // 极老内核兜底
-        portrait.addEventListener("mousemove", onPointerMove);
-        portrait.addEventListener("mouseenter", onPointerEnter);
-        portrait.addEventListener("mouseleave", onPointerLeave);
-      }
+    if (window.PointerEvent) {
+      portrait.addEventListener("pointermove", onPointerMove);
+      portrait.addEventListener("pointerenter", onPointerEnter);
+      portrait.addEventListener("pointerleave", onPointerLeave);
+    }
+    // 鼠标事件兜底：部分内嵌浏览器不派发 pointer 事件但会派发 mouse 事件
+    portrait.addEventListener("mousemove", onPointerMove);
+    portrait.addEventListener("mouseenter", onPointerEnter);
+    portrait.addEventListener("mouseleave", onPointerLeave);
     }
     window.addEventListener("resize", sizeWatch);
 
