@@ -346,19 +346,8 @@ button {
   cursor: crosshair;
   user-select: none;
   -webkit-user-select: none;
-  /* 柔和边缘渐隐：让照片的黑色背景融入页面，人物像是直接站在页面上 */
-  -webkit-mask-image: radial-gradient(
-    170% 116% at 50% 45%,
-    #000 76%,
-    rgba(0, 0, 0, 0.55) 90%,
-    transparent 99%
-  );
-  mask-image: radial-gradient(
-    170% 116% at 50% 45%,
-    #000 76%,
-    rgba(0, 0, 0, 0.55) 90%,
-    transparent 99%
-  );
+  /* 人物抠图后无背景：加柔和投影，营造悬浮感 */
+  filter: drop-shadow(0 26px 34px rgba(0, 0, 0, 0.5));
 }
 
 .portrait-bg,
@@ -372,13 +361,13 @@ button {
 }
 
 .portrait-bg {
-  background-image: url("../assets/img-default.jpg");
+  background-image: url("../assets/img-default-cutout.png");
 }
 
 /* reveal 图层：径向渐变遮罩由 CSS 变量驱动（JS 每帧写入位置与透明度），
    相比逐帧 canvas.toDataURL 更流畅，且移动端无 hover 时保持隐藏 */
 .portrait-reveal {
-  background-image: url("../assets/img-reveal.jpg");
+  background-image: url("../assets/img-reveal-cutout.png");
   opacity: var(--spot-alpha, 0);
   -webkit-mask-image: radial-gradient(
     circle 250px at var(--spot-x, 50%) var(--spot-y, 50%),
